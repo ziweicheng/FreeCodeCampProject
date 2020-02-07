@@ -1,0 +1,168 @@
+<style>
+body {
+  width:100%;
+  height:100%;
+  background-image:linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.6)
+    ),
+    url(https://raw.githubusercontent.com/lasjorg/fcc-form-example-image/master/67103817-7c51e200-f18b-11e9-975f-f74561336a9a-lj.jpg);
+
+
+}
+
+.title-style{
+  position:relative;
+  text-align:center;
+  font-size:120%;
+  color:white;
+  
+}
+
+.form-style{
+  background-color:rgba(58, 58, 158, 0.8);
+  width:40%;
+  margin:auto;
+  padding:10px;
+  border-radius:15px; 
+}
+
+.content-style{
+  color:white;
+  font-size:24px;
+  margin:10px;
+}
+
+.choice-style{
+  font-size: 18px;
+  color:white;
+}
+input[type=text]{
+  width:100%;
+  height:30px;
+  border-radius:5px;
+  margin:5px 0px;
+}
+
+input[type=email]{
+  width:100%;
+  height:30px;
+  border-radius:5px;
+  margin:5px 0px;
+}
+
+input[type=number]{
+  width:100%;
+  height:30px;
+  border-radius:5px;
+  margin:5px 0px;
+}
+
+select{
+  width:100%;
+  height:30px;
+  border-radius:5px;
+  margin:5px 0px;
+  font-size:16px;
+  color:black;
+}
+
+textarea{
+  width:100%;
+  height:100px;
+  margin:10px 0px;
+  resize:none;
+  border-radius:5px;
+  font-size:16px;
+  font-family:"Times New Roman", Times, serif;
+}
+
+input[type=submit]{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-size:24px;
+}
+</style>
+
+
+
+<body>
+<div id="title content" class="title-style">
+	<h1 id="title">freeCodeCamp Survey Form</h1>
+	<p id="description">Thank you for taking the time to help us improve the platform</p>
+</div>
+<div id="form content" class="form-style">
+	<form id="survey-form">
+		<div class="content-style">
+			<label for="name">Name</label><br>
+			<input type="text" name="Name" placeholder="Please type your full name here" id="name" required><br>
+		</div>
+		<div class="content-style">
+			<label for="email">E-mail</label><br>
+			<input type="email" name="E-mail" placeholder="Please type your email address here" id="email" required><br>
+		</div>
+		<div class="content-style">
+			<label for="number">Age(optional)</label><br>
+			<input type="number" name="Age" placeholder="Please type your age here" id="number" min="10" max="120"><br>
+		</div>
+		<div class="content-style">
+			<label for>Which option best describe your current role?<br>
+			<select id="dropdown" required>
+				<option disabled>Select current role</option>
+				<option>Student</option>
+				<option>Full time job</option>
+				<option>Full time learner</option>
+				<option>Other</option>
+				<option>Prefer not to say</option>
+			</select><br>
+		</div>
+		<div class="content-style">
+			Would you recommen freeCodeCamp to a friend?<br>
+			<input type="radio" name="recommend" id="Definitely">
+			<label for="Definitely" class="choice-style">Definitely</label><br>
+			<input type="radio" name="recommend" id="Maybe">
+			<label for="Maybe" class="choice-style">Maybe</label><br>
+			<input type="radio" name="recommend" id="Not sure">
+			<label for="Not sure" class="choice-style">Not sure</label><br>
+		</div>
+		<div class="content-style">
+			What would you like to see improved? (Check all that apply)<br>
+			<input type="checkbox" id="Front-end projects" name="improved">
+			<label for="Front-end projects" class="choice-style">Front-end projects</label><br>
+			<input type="checkbox" id="Back-end projects" name="improved">
+			<label for="Back-end projects" class="choice-style">Back-end projects</label><br>
+			<input type="checkbox" id="Data Visualization" name="improved">
+			<label for="Visualization" class="choice-style">Visualization</label><br>
+			<input type="checkbox" id="Challenges" name="improved">
+			<label for="Challenges" class="choice-style">Challenges</label><br>
+			<input type="checkbox" id="Open Source Community" name="improved">
+			<label for="Open Source Community" class="choice-style">Open Source Community</label><br>
+			<input type="checkbox" id="Gitter help rooms" name="improved">
+			<label for="Gitter help rooms" class="choice-style">Gitter help rooms</label><br>
+			<input type="checkbox" id="Videos" name="improved">
+			<label for="Videos" class="choice-style">Videos</label><br>
+			<input type="checkbox" id="City Meetups" name="improved">
+			<label for="City Meetups" class="choice-style">City Meetups</label><br>
+			<input type="checkbox" id="Wiki" name="improved">
+			<label for="Wiki" class="choice-style">Wiki</label><br>
+			<input type="checkbox" id="Forum" name="improved">
+			<label for="Forum" class="choice-style">Forum</label><br>
+			<input type="checkbox" id="Additional Courses" name="improved">
+			<label for="Forum" class="choice-style">Additional Courses</label><br>
+		</div>
+		<div class="content-style">
+		Any comments or suggestions?<br>
+		<textarea id="comments">Please write your comments here!</textarea>
+		</div>
+   <div>
+		<input type="submit" value="Submit">
+   </div>
+	</form>
+</div>
+</body>
