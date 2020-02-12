@@ -1,0 +1,230 @@
+<style>
+
+body{
+  background-color: #eee;
+  font-family: Arial, Helvetica, sans-serif;
+  position:relative;
+}
+
+header{
+  width:100%;
+  height:40px;
+  background-color:rgba(238,238,238,1);
+  opacity:1;
+  display:flex;
+  justify-content: space-between;
+  position:fixed;
+  top:0px;
+  left:0px;
+  right:0px;
+}
+#header-img{
+  width:320px;
+}
+nav{
+  padding:0px 20px;
+}
+.list-style{
+  list-style-type:none;
+  display:inline;
+  margin:0px 40px;
+}
+a{
+  color:black;
+}
+a:hover{
+  color:blue;
+}
+.hero{
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  text-align:center;
+  margin-top:60px;
+}
+
+}
+input[type="email"]{
+  border-radius:2px;
+  width:500px;
+  height:40px;
+}
+
+input[type="submit"]{
+  margin-top:20px;
+  width:120px;
+  background-color: rgb(237, 201, 57);
+  font-size:18px; 
+}
+
+.rowflex{
+  display:flex; 
+  margin-top:20px;
+  margin:auto;
+  justify-content:center;
+  width:600px;
+}
+
+.check{
+  background-color: yellow;
+}
+
+
+@font-face {
+  font-family: 'iconfont';  /* project id 1637157 */
+  src: url('//at.alicdn.com/t/font_1637157_ihb9vla8pfe.eot');
+  src: url('//at.alicdn.com/t/font_1637157_ihb9vla8pfe.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1637157_ihb9vla8pfe.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1637157_ihb9vla8pfe.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1637157_ihb9vla8pfe.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1637157_ihb9vla8pfe.svg#iconfont') format('svg');
+}
+
+
+.iconfont{
+  font-family:"iconfont";
+  font-size:40px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale; 
+  padding-left:20px;
+  color:#f25615;
+  margin-right:40px;
+}
+
+#video{
+  display:flex;
+  justify-content:center;
+}
+
+
+#Pricing{
+  display:flex; 
+  margin-top:20px;
+  margin:auto;
+  justify-content:center;
+}
+.container{
+  width:350px;
+  margin:80px 20px;
+  border:solid;
+  border-width:1px;
+  text-align:center;
+}
+
+.subtitle{
+  font-size:16px;
+  font-weight:bold;
+  background-color:#cccfcd;
+  margin-top:0px;
+  height:50px;
+  line-height: 50px;
+}
+
+button{
+  background:yellow;
+  width:100px;
+  height:50px;
+  font-size: 16px;
+  font-weight:bold;
+  border:none;
+  margin-bottom:10px;
+}
+
+button:hover{
+  background-color:#36e35f;
+}
+
+@media(max-width=400px){
+  #video{
+    width:100%;
+    height:auto;
+  }
+}
+
+
+</style>
+
+
+
+<body>
+  <header id="header">
+    <img id="header-img" src="https://s3.amazonaws.com/freecodecamp/original_trombones.png" alt="original trombones logo">
+    <nav id="nav-bar">
+      <ul>
+        <li class="list-style"><a href="#Feature" class="nav-link">Features</a></li> 
+        <li class="list-style"><a href="#How it works" class="nav-link">How it works</a></li>
+        <li class="list-style"><a href="#Pricing" class="nav-link">Pricing</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div>
+    <section class="hero">
+      <h2>Handcrafted,home-made masterpieces</h2>
+      <form action="https://www.freecodecamp.com/email-submit">
+        <input type="email" id="email" name="E-mail" placeholder="Enter your email address" required><br>
+        <input type="submit" id="submit" name="submit" value="GET START">
+      </form>
+    </section>
+    <div id="Feature">
+      <div class="rowflex">
+        <i class="iconfont">&#xe66c;</i>
+        <div>
+          <h4>Premium Materials</h4>
+          <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+        </div>
+        </div>
+      <div class="rowflex">
+        <i class="iconfont">&#xe8e2;</i>
+        <div>
+          <h4>Fast Shipping</h4>
+          <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+        </div>
+      </div>
+      <div class="rowflex">
+        <i class="iconfont">&#xe604;</i>
+        <div>
+          <h4>Quality Assurance</h4>
+          <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+        </div>
+      </div>
+    </div>
+    <div id="video">
+      <iframe src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&controls=0&showinfo=0" height="400" width="600"id="video" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div id="Pricing">
+      <div class="container">
+        <p class="subtitle">TENOR TROMBONE</p><br>
+        <p>$600</p><br>
+        <p>Lorem ipsum.</p><br>
+        <p>Lorem ipsum.</p><br>
+        <p>Lorem ipsum dolor.</p><br>
+        <p>Lorem ipsum.</p><br>
+        <button>SELECT</button>
+      </div>
+      <div class="container">
+        <p class="subtitle">BASS TROMBONE</p><br>
+        <p>$800</p><br>
+        <p>Lorem ipsum.</p><br>
+        <p>Lorem ipsum.</p><br>
+        <p>Lorem ipsum dolor.</p><br>
+        <p>Lorem ipsum.</p><br>
+        <button>SELECT</button>
+      </div>
+      <div class="container">
+        <p class="subtitle">VALVE TROMBONE</p><br>
+        <p>$1200</p><br>
+        <p>Plays similar to a Trumpet.</p><br>
+        <p>Great for Jazz Bands.</p><br>
+        <p>Lorem ipsum dolor.</p><br>
+        <p>Lorem ipsum.</p><br>
+        <button>SELECT</button>
+      </div>
+    </div>
+    <footer>
+      <P>author: Ziwei Cheng</p>
+    </footer>
+  </div>
+</body>
